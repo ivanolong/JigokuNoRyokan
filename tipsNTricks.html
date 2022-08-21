@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/tipsNTricks.css">
+    <title>Jigoku No Ryokan</title>
+</head>
+<!-- NAV BAR -->
+<body id="top">
+    <nav id="nb" class="navbar">
+        <h1 class="logo">Jigoku No Ryokan</h1>
+        <ul class="menu">
+            <li><a href="./index.html">Download</a></li>
+            <li><a href="#top">Tips and Tricks</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <img src="./assets/background.jpg" class="background">
+
+    <!-- Tips and tricks collapsible -->
+    <div class="collapsible">
+        <div class="accordion">
+            <div class="content8x">
+                <div class="label">Tip 1</div>
+                <div class="content">
+                    <p>There is something in the walls, why not try walking into them?</p>
+                </div>
+            </div>
+            <div class="content8x">
+                <div class="label">Tip 2</div>
+                <div class="content">
+                    <p>You don't take fall damage!</p>
+                </div>
+            </div>
+            <div class="content8x">
+                <div class="label">Tip 3</div>
+                <div class="content">
+                    <p>Try to conserve your stamina for running away!</p>
+                </div>
+            </div>
+            <div class="content8x">
+                <div class="label">Tip 4</div>
+                <div class="content">
+                    <p>Remember to find the fox!</p>
+                </div>
+            </div>
+            <div class="content8x">
+                <div class="label">Tip 5</div>
+                <div class="content">
+                    <p>Avoid the banshees at all costs!</p>
+                </div>
+            </div>
+            <div class="content8x">
+                <div class="label">Tip 6</div>
+                <div class="content">
+                    <p>It wouldn't hurt to look up every once in a while...</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<!-- when button is clicked, setactive and tip will be shown -->
+<script>
+    const accordion=document.getElementsByClassName
+    ('content8x');
+    
+    for (i = 0; i<accordion.length; i++){
+        accordion[i].addEventListener('click', function(){
+            this.classList.toggle('active')
+        })
+    }
+    </script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>Jigoku No Ryokan</title>
+</head>
+
+<body id="top">
+    <div class="notif" style="display:none"></div>
+    <nav id="nb" class="navbar">
+        <h1 class="logo">Jigoku No Ryokan</h1>
+        <ul class="menu">
+            <li><a href="./index.html">Download</a></li>
+            <li><a href="./tipsNTricks.html">Tips and Tricks</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="image"></div>
+            <div id="toggleContainer" class="login">
+                <div class="box">
+                    <div class="title">SIGN UP</div>
+                    <label for="username">Username</label>
+                    <div class="inputBox"> 
+                        <input type="text" placeholder="Username" class="form-control" id="username" autocomplete="off">
+                    </div>
+
+                    <label for="password">Password</label>
+                    <div class="inputBox"> 
+                        <input type="text" placeholder="Password" class="form-control" id="password" autocomplete="off">
+                    </div>
+                    
+                    <label for="confirm">Confirm Password</label>
+                    <div class="inputBox"> 
+                        <input type="text" placeholder="Confirm Password" class="form-control" id="confirm" autocomplete="off">
+                    </div>
+
+                    <button id="submit" class="btn btn-Login" type="submit">Sign Up</button>
+                    <a id="register" href="./login.html">Have an Account? Log In here!</a>
+                </div>
+                <div class="lottie">
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_stuerras.json"  background="transparent"  speed="0.5"  style="width: 30%; height: 30%;"  loop autoplay></lottie-player>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="./scripts/register.js"></script>
+</html>
