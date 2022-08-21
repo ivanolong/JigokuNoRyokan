@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    outline: none;
+    
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -99;
+}
+.collapsible
+{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+}
+.accordion
+{
+    max-width: 800px;
+}
+.accordion .content8x
+{
+position: relative;
+margin: 30px 50px;
+}
+.accordion .content8x .label
+{
+    position: relative;
+    padding: 20px;
+    background: rgb(63, 63, 63);
+    color: #fff;
+    cursor: pointer;
+}
+.accordion .content8x .label::before
+{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.accordion .content8x.active .label::before
+{
+    content: '-';
+}
+.accordion .content8x .content
+{
+    position: relative;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y:auto;
+}
+.accordion .content8x.active .content
+{
+    height: 40px;
+    padding: 10px;
+}
